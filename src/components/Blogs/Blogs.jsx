@@ -9,10 +9,15 @@ const Blogs = () => {
       .then((data) => setBlogs(data));
   }, []);
   return (
-    <div>
-      {blogs.map((blog) => (
-        <SingleBlog key={blog.id} blog={blog}></SingleBlog>
-      ))}
+    <div className="grid grid-cols-1 md:grid-cols-4 py-8 gap-8">
+      <div className="md:col-span-3">
+        {blogs.map((blog) => (
+          <SingleBlog key={blog.id} blog={blog}></SingleBlog>
+        ))}
+      </div>
+      <div className="col-span-1">
+        <h4>Bookmarked Blogs</h4>
+      </div>
     </div>
   );
 };
