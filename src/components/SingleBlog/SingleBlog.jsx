@@ -2,7 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 
-const SingleBlog = ({ blog }) => {
+const SingleBlog = ({ blog, handleBookmark }) => {
+  console.log(handleBookmark);
   const {
     blog_picture,
     blog_title,
@@ -12,7 +13,6 @@ const SingleBlog = ({ blog }) => {
     published_in,
     tags,
   } = blog;
-  console.log(blog);
   const tagArr = [];
   for (const tag in tags) {
     tagArr.push(tags[tag]);
@@ -55,12 +55,13 @@ const SingleBlog = ({ blog }) => {
         <div>
           <span className="text-[#707070]">{tagArr.join(', ')}</span>
         </div>
-        <a
+        <button
+          onClick={() => handleBookmark(read_time)}
           className="underline text-[#6047EC] font-semibold underlined"
           href="http://"
         >
           Mark as read
-        </a>
+        </button>
       </div>
       <hr />
     </div>
