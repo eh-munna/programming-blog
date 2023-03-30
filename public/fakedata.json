@@ -1,0 +1,42 @@
+[
+  {
+    "id": "6425ab62bf8e218c46c17257",
+    "author_name": "Nieves Davis",
+    "author_image": "https://plus.unsplash.com/premium_photo-1669532642248-774713de3ef7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    "blog_title": "The Most Innovative Things Happening With Coding",
+    "blog_picture": "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    "read_time": 10,
+    "published_in": "11/1/2022",
+    "tags": ["coding", "beginners", "programming"]
+  },
+  {
+    "id": "6425ab624269a119c0686129",
+    "author_name": "Mcfarland Sweeney",
+    "author_image": "https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1441&q=80",
+    "blog_title": "Why You're Failing at Programming",
+    "blog_picture": "https://images.unsplash.com/photo-1634838080334-28befa9efe80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    "read_time": 4,
+    "published_in": "12/1/2022",
+    "tags": ["problem", "programming", "failure"]
+  },
+  {
+    "id": "6425ab62218db4c710c7d6f9",
+    "author_name": "Park Bates",
+    "author_image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    "blog_title": "How to Solve Issues With Programming",
+    "blog_picture": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
+    "read_time": 6,
+    "published_in": "2/1/2023",
+    "tags": ["problem solving", "programming", "coding"]
+  },
+  {
+    "id": "6425ab62788484325059b611",
+    "author_name": "Barnett Barnes",
+    "author_image": "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=80",
+    "blog_title": "What Would the World Look Like Without Programming?",
+    "blog_picture": "https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80",
+    "read_time": 7,
+    "published_in": "12/1/2021",
+    "tags": ["coding", "programming", "innovation"]
+  }
+]
