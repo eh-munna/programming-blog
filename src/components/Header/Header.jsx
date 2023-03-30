@@ -7,7 +7,7 @@ const Header = () => {
         <div>
           <a
             href="http://"
-            className="text-[#111111] font-semibold text-lg md:font-bold md:text-2xl"
+            className="text-[#111111] font-semibold text-lg md:text-2xl"
           >
             Programming Blog
           </a>

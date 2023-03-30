@@ -7,7 +7,7 @@
     "blog_picture": "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     "read_time": 10,
     "published_in": "11/1/2022",
-    "tags": ["coding", "beginners", "programming"]
+    "tags": ["#coding", "#beginners", "#programming"]
   },
   {
     "id": "6425ab624269a119c0686129",
@@ -17,7 +17,7 @@
     "blog_picture": "https://images.unsplash.com/photo-1634838083208-ce7a36701fe4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     "read_time": 4,
     "published_in": "12/1/2022",
-    "tags": ["problem", "programming", "failure"]
+    "tags": ["#problem", "#programming", "#failure"]
   },
   {
     "id": "6425ab62218db4c710c7d6f9",
@@ -27,7 +27,7 @@
     "blog_picture": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
     "read_time": 6,
     "published_in": "2/1/2023",
-    "tags": ["problem solving", "programming", "coding"]
+    "tags": ["#problem solving", "#programming", "#coding"]
   },
   {
     "id": "6425ab62788484325059b611",
@@ -37,6 +37,6 @@
     "blog_picture": "https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80",
     "read_time": 7,
     "published_in": "12/1/2021",
-    "tags": ["coding", "programming", "innovation"]
+    "tags": ["#coding", "#programming", "#innovation"]
   }
 ]
