@@ -1,6 +1,11 @@
 import React from 'react';
 
-const Bookmark = ({ totalTime }) => {
+const Bookmark = ({ totalTime, blogCount, text }) => {
+  console.log(text);
+  const textArr = [];
+  for (const newText in text) {
+    textArr.push(text[newText]);
+  }
   return (
     <div className="md:sticky md:top-3">
       <div className="space-y-3 md:space-y-6">
@@ -11,13 +16,15 @@ const Bookmark = ({ totalTime }) => {
         </div>
         <div className="bg-[#f3f3f3] rounded-md p-3 space-y-4">
           <h3 className="#111111 font-semibold text-lg ">
-            Bookmarked Blogs : 8
+            Bookmarked Blogs : {blogCount}
           </h3>
-          <div className="bg-[#fff] rounded-md p-2">
-            <h4 className="font-semibold">
-              The Most Innovative Things Happening With Coding
-            </h4>
-          </div>
+          {textArr.map((text) => {
+            return (
+              <div className="bg-[#fff] rounded-md p-2">
+                <h4 className="font-semibold">{text}</h4>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

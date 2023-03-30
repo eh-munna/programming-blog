@@ -2,9 +2,9 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 
-const SingleBlog = ({ blog, handleBookmark }) => {
-  console.log(handleBookmark);
+const SingleBlog = ({ blog, handleTime, handleBookmark }) => {
   const {
+    id,
     blog_picture,
     blog_title,
     author_image,
@@ -44,7 +44,7 @@ const SingleBlog = ({ blog, handleBookmark }) => {
           {/* time and bookmark */}
           <div className="flex items-center gap-2 text-[#707070]">
             <p className="text-[#707070]">{read_time} min read</p>
-            <button>
+            <button onClick={() => handleBookmark(blog_title)}>
               <FontAwesomeIcon icon={faBookmark} />
             </button>
           </div>
@@ -56,7 +56,7 @@ const SingleBlog = ({ blog, handleBookmark }) => {
           <span className="text-[#707070]">{tagArr.join(', ')}</span>
         </div>
         <button
-          onClick={() => handleBookmark(read_time)}
+          onClick={() => handleTime(read_time)}
           className="underline text-[#6047EC] font-semibold underlined"
           href="http://"
         >
