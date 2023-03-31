@@ -23,7 +23,7 @@ const Blogs = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-6 py-8 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-6 py-8 md:gap-8">
       <div className="md:col-span-4">
         {blogs.map((blog) => (
           <SingleBlog
