@@ -2,8 +2,8 @@ import React from 'react';
 
 const Question = () => {
   return (
-    <div className="grid grid-cols-1 md:gap-8 space-y-2 md:space-y-3 pb-4">
-      <div>
+    <div className="space-y-2 md:space-y-4">
+      <div className="space-y-2 md:space-y-4">
         <h4 className="font-semibold text-lg">
           What are the difference between props and state?
         </h4>
@@ -26,7 +26,7 @@ const Question = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="space-y-2 md:space-y-4">
         <h4 className="font-semibold text-lg">How does useState works?</h4>
         <ul className="space-y-2 md:space-y-3 list-inside list-disc">
           <li>
@@ -44,7 +44,7 @@ const Question = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="space-y-2 md:space-y-4">
         <h4 className="font-semibold text-lg">
           What are the purpose of useEffect other than fetching data?
         </h4>
@@ -66,7 +66,7 @@ const Question = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="space-y-2 md:space-y-4">
         <h4 className="font-semibold text-lg">How Does React work?</h4>
         <ul className="space-y-2 md:space-y-3 list-inside list-disc">
           <li>

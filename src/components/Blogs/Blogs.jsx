@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Bookmark from '../Bookmark/Bookmark';
 import SingleBlog from '../SingleBlog/SingleBlog';
-import { ToastContainer, toast } from 'react-toastify';
+
+import { toast } from 'react-toastify';
+import Question from '../Question/Question';
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -36,33 +38,13 @@ const Blogs = () => {
       });
     } else {
       const newBlogID = [...blogID, id];
-      // console.log(newBlog);
       setBlogID(newBlogID);
     }
-
-    // const newBlogID = [...blogID, id];
-    // // console.log(newBlog);
-    // setBlogID(newBlogID);
-    // newBlogID.find((blog) => {
-    //   if (blog === id) {
-    //     console.log(`same`);
-    //   }
-    // });
-
-    // newBlog.find((b_id) => {
-    //   b_id.id === blog.blog_title;
-    //   console.log(b_id.id);
-    //   return alert(`hello`);
-    // });
-    // console.log(newBlog);
-    // console.log(blog.id);
-    // console.log(blogID);
-    // console.log(id);
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-6 py-8 md:gap-8 md:relative">
-      <div className="md:col-span-4">
+    <div className="grid grid-cols-1 md:grid-cols-12 py-8 md:gap-8 order-1 md:relative">
+      <div className="md:col-span-8">
         {blogs.map((blog) => (
           <SingleBlog
             handleTime={handleTime}
@@ -72,8 +54,11 @@ const Blogs = () => {
           ></SingleBlog>
         ))}
       </div>
-      <div className="col-span-2 py-2 md:py-4  ">
+      <div className="md:col-span-4 py-2 md:py-4 order-last md:order-2">
         <Bookmark totalTime={time} blogCount={bookmark} text={text}></Bookmark>
+      </div>
+      <div className="space-y-2 md:space-y-3 py-4 md:col-span-8 order-2 md:order-last">
+        <Question></Question>
       </div>
     </div>
   );
