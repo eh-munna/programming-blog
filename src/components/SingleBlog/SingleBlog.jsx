@@ -44,7 +44,7 @@ const SingleBlog = ({ blog, handleTime, handleBookmark }) => {
           {/* time and bookmark */}
           <div className="flex items-center gap-2 text-[#707070]">
             <p className="text-[#707070]">{read_time} min read</p>
-            <button onClick={() => handleBookmark(blog_title)}>
+            <button onClick={() => handleBookmark(blog_title, blog)}>
               <FontAwesomeIcon icon={faBookmark} />
             </button>
           </div>
