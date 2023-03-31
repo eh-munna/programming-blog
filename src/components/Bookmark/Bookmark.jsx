@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Bookmark = ({ totalTime, blogCount, text }) => {
-  console.log(text);
   const textArr = [];
   for (const newText in text) {
     textArr.push(text[newText]);

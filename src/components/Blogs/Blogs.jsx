@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Bookmark from '../Bookmark/Bookmark';
 import SingleBlog from '../SingleBlog/SingleBlog';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   const [time, setTime] = useState(0);
   const [bookmark, setBookmark] = useState(0);
-  // const [blogID, setBlogID] = useState([]);
+  const [blogID, setBlogID] = useState([]);
   const [text, setText] = useState([]);
   useEffect(() => {
     fetch('fakedata.json')
@@ -17,17 +18,46 @@ const Blogs = () => {
   // bookmark handling functions
   const handleTime = (read_time) => setTime(read_time + time);
 
-  const handleBookmark = (blog_title, blog) => {
+  const handleBookmark = (blog_title, id) => {
     setBookmark(bookmark + 1);
     const newText = [...text, blog_title];
     setText(newText);
-    // const newBlog = [...blogID, blog];
+
+    if (blogID.includes(id)) {
+      toast.warn('This blog is already bookmarked!', {
+        position: 'top-center',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'light',
+      });
+    } else {
+      const newBlogID = [...blogID, id];
+      // console.log(newBlog);
+      setBlogID(newBlogID);
+    }
+
+    // const newBlogID = [...blogID, id];
+    // // console.log(newBlog);
+    // setBlogID(newBlogID);
+    // newBlogID.find((blog) => {
+    //   if (blog === id) {
+    //     console.log(`same`);
+    //   }
+    // });
+
     // newBlog.find((b_id) => {
     //   b_id.id === blog.blog_title;
     //   console.log(b_id.id);
     //   return alert(`hello`);
     // });
     // console.log(newBlog);
+    // console.log(blog.id);
+    // console.log(blogID);
+    // console.log(id);
   };
 
   return (

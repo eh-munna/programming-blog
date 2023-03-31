@@ -2,6 +2,8 @@ import './App.css';
 import Blogs from './components/Blogs/Blogs';
 import Header from './components/Header/Header';
 import Question from './components/Question/Question';
+import { ToastContainer, toast, Zoom } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
         <Header></Header>
         <Blogs></Blogs>
         <Question></Question>
+        <ToastContainer transition={Zoom} />
       </div>
     </div>
   );
